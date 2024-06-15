@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Meu Portfólio</title>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+      tinymce.init({
+        selector: '#editor',
+        plugins: 'image link lists',
+        toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | outdent indent | link image',
+      });
+    </script>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my personal site.</p>
+    <h1>Meu Portfólio</h1>
+    <textarea id="editor">
+      <h2>Sobre Mim</h2>
+      <p>Escreva aqui sobre você...</p>
+      <h2>Experiência</h2>
+      <p>Detalhe sua experiência profissional...</p>
+      <h2>Projetos</h2>
+      <p>Liste alguns dos seus projetos importantes...</p>
+    </textarea>
 </body>
 </html>
